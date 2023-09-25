@@ -1,6 +1,6 @@
 import javax.swing.*;
 
-public class RemoteControlTest {
+public class RemoteControlTest { //a
     public static void main(String [] args) {
         RemoteControlGUI remote = new RemoteControlGUI();
         remote.masterControl.registerObserver(remote);

@@ -48,7 +48,7 @@ public class HouseGUI extends JFrame implements IObserver { //HouseGUI needs to 
         // Load the background image
         BufferedImage backgroundImage = null;
         try {
-            backgroundImage = ImageIO.read(new File("Images/house.jpg"));
+            backgroundImage = ImageIO.read(new File("casaInteligente - PrimerParcial/Images/house.jpg"));
         } catch (IOException e) {
             e.printStackTrace();
         }

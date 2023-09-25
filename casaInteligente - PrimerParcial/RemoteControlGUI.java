@@ -44,8 +44,8 @@ public class RemoteControlGUI extends JFrame implements IObserver { //RemoteCont
     public int row, column;
 
     //button icons
-    ImageIcon On = new ImageIcon("Images/On.jpeg");
-    ImageIcon Off = new ImageIcon("Images/Off.jpeg");
+    ImageIcon On = new ImageIcon("casaInteligente - PrimerParcial/Images/On.jpeg");
+    ImageIcon Off = new ImageIcon("casaInteligente - PrimerParcial/Images/Off.jpeg");
 
 
     //////ObserverPattern.Observer implementation
