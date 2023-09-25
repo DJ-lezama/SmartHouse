@@ -150,7 +150,7 @@ public class RemoteControlGUI extends JFrame implements IObserver { //RemoteCont
 
             if (masterControl.GetVacMode()) {
                 System.out.println("Ending Vacation Mode");
-                masterControl.stopVacacionesMode();
+                masterControl.stopVacationMode();
                 buttonsArray[7][1].setIcon(Off);
 
             }
@@ -167,7 +167,7 @@ public class RemoteControlGUI extends JFrame implements IObserver { //RemoteCont
                 }
                 if (row == 7)
                 {
-                    masterControl.startVacacionesMode();
+                    masterControl.startVacationMode();
                     buttonsArray[7][1].setIcon(On);
 
                 }

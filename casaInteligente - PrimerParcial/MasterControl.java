@@ -21,7 +21,7 @@ public class MasterControl implements ISubject {
     {
         return vacMode;
     }
-    Thread vacacionesThread = new Thread(this::VacationMode); // Create a new thread for VacacionesMode
+    Thread vacationThread = new Thread(this::VacationMode); // Create a new thread for VacacionesMode
     public int NumButtons = 0;
 
     public int getNumButtons() {
@@ -120,16 +120,16 @@ public class MasterControl implements ISubject {
         notifyObserver();
     }
 
-    public void startVacacionesMode() {
+    public void startVacationMode() {
         vacMode = true;
-
-        vacacionesThread.start();
+        vacationThread.start();
 
     }
 
-    public void stopVacacionesMode() {
-        vacMode = false; // Set the flag to false to stop the loop
-        vacacionesThread.interrupt();
+    public void stopVacationMode() {
+        vacMode = false; // Set the flag to "false" to stop the loop
+        vacationThread.interrupt();
+        vacationThread = new Thread(this::VacationMode);
     }
     int millis= 0;
     public void VacationMode()  {
