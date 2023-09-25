@@ -2,7 +2,7 @@
 This program simulates a smart house and its remote control, from which the user can turn on and off different appliances like a stereo, kitchen, attic, and living room lights, boiler, open and close the garage door, etc.<br>
 Three different design patterns were used for this project:<br>
 
-*Singleton pattern: To only have one instance of the class MasterControl (one of the main classes of this program). >br>
+*Singleton pattern: To only have one instance of the class MasterControl (one of the main classes of this program). <br>
 *Observer pattern: Works as a bridge between the two GUIs and the MasterControl, which are the observers and the observable subject respectively.<br>
 *Command pattern: To encapsulate in one object the information and instructions necessary to carry out a specific command, which in this case is executing or undoing the actions of turning an appliance on or off.<br>
 
